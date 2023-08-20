@@ -7,14 +7,14 @@ def generate_outfit_image(outfit_items):
     outfit_image = Image.new("RGB", (canvas_width, canvas_height), "white")
     
     # Load a sample mannequin image
-    mannequin_image = Image.open("mannequin.png")  # Replace with the path to your mannequin image
+    mannequin_image = Image.open("mannequin.png") 
     
     # Paste the mannequin image onto the canvas
     outfit_image.paste(mannequin_image, (100, 100))
     
     # Add text labels for each outfit item
     draw = ImageDraw.Draw(outfit_image)
-    font = ImageFont.truetype("arial.ttf", 20)  # Replace with your font file
+    font = ImageFont.truetype("arial.ttf", 20)  
     
     y_position = 400
     for item in outfit_items:
