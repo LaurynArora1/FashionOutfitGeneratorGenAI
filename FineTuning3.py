@@ -7,7 +7,7 @@ def refine_outfit_recommendations(current_outfit):
         user_feedback = input("Q1. How do you like this outfit? Type 'better' if you want a new one, or 'done' if you're satisfied: ")
         
         if user_feedback.lower() == "better":
-            current_outfit = generate_new_outfit()  # Your function to generate a new outfit
+            current_outfit = generate_new_outfit()  #function to generate a new outfit
             print("Here's a new outfit recommendation:", current_outfit)
             
         elif user_feedback.lower() == "done":
@@ -20,5 +20,5 @@ def refine_outfit_recommendations(current_outfit):
     return current_outfit
 
 # Call the function to refine outfit recommendations
-initial_outfit = generate_initial_outfit()  # Your function to generate an initial outfit
+initial_outfit = generate_initial_outfit()  #function to generate an initial outfit
 final_outfit = refine_outfit_recommendations(initial_outfit)
